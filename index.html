@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aproximación de Stirling para Factoriales Grandes</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+  <header>
+    <h1>Aproximación de Stirling</h1>
+    <nav>
+        <ul class="menu">
+          <li><a href="#explicacion">Explicación del Tema</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+        </ul>
+        <button class="menu-btn">&#9776;</button>
+      </nav>
+  </header>
+  
+  <section id="explicacion">
+    <h2>Explicación del Tema</h2>
+    <p>La aproximación de Stirling es una fórmula utilizada para estimar el valor de factoriales grandes. Se denota como:</p>
+    <p>n! ≈ √(2πn) * (n/e)^n</p>
+    <p>Donde:</p>
+    <ul>
+      <li>n es el número factorial que deseamos aproximar.</li>
+      <li>π es pi, aproximadamente 3.14159.</li>
+      <li>e es la base del logaritmo natural, aproximadamente 2.71828.</li>
+    </ul>
+    <p>Esta aproximación es útil cuando calcular el factorial de números muy grandes, ya que puede ser más eficiente computacionalmente que calcular el factorial exacto.</p>
+    <p>La fórmula proviene del teorema asintótico de Stirling, que establece que el límite del cociente del factorial y la función gamma tiende a 1 cuando n tiende a infinito.</p>
+  </section>
+  
+  <div class="calculator" id="calculadora">
+    <h2>Calculadora</h2>
+    <form id="factorialForm">
+      <label for="number">Ingrese un número para calcular su factorial (n):</label><br>
+      <input type="number" id="number" name="number" required><br><br>
+      <button type="submit">Calcular Factorial</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+  
+  <script src="j.js" defer></script>
+  <script src="menu.js" defer></script>
+</body>
+</html>
